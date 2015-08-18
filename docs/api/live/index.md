@@ -1,6 +1,6 @@
 # Live API
 
-The Live API provides access to latest measurements from **one station** or **all stations**.
+The Live API provides access to the latest measurements from **one station** or **all stations**.
 
 ## License
 To use data from Pioupiou stations, you must comply with the license available on the [Data Licensing](../../data-licensing.md) page.
@@ -293,10 +293,10 @@ status.state | x | x | Station power state, **"on"**, **"off"** or **null**. "of
 
 ## Error codes
 
-An ```HTTP/1.1 200 OK``` header is sent when the request is successful.
+An ```HTTP/1.1 200 OK``` header is sent on successful request.
 HTTP status code other than ```200``` means that an error has occured.
 
-In most case, the application will return a JSON object, containing details about the error.
+In most cases the application will return a JSON object, including details about the error.
 
 ```bash
 $ curl -i "http://api.pioupiou.fr/v1/live/999999"
@@ -326,9 +326,9 @@ The API supports cross-origin requests.
 An ```Access-Control-Allow-Origin: *``` header is sent with all responses. It means that you can call the API directly from your javascript page.
 
 ### JSONP
-JSONP is also supported, even if it's use is no longer encouraged.
+JSONP is also supported, even if its use is no longer encouraged.
 
-The name of the callback function must be placed in query string ```callback``` argument :
+The name of the callback function must be placed in query string ```callback``` argument:
 
 ```bash
 $ curl -i "http://api.pioupiou.fr/v1/live/1?callback=myCallBackFunction"

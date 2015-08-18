@@ -2,16 +2,16 @@
 
 Welcome to the Pioupiou developers portal.
 
-Pioupiou is build from the beginning with the idea of making it's data available in an open and easily reusable way.
+From the inception, Pioupiou was built with the idea of making its data available in an open and easily reusable way.
 
 We believe that the value is not the data, but the innovative uses **you** will create from it.
 
 ## API endpoints
 
 ### Measurements
-* [Live] : latest measurements
-* [Archive] : historical data
-* [Push] : real-time feed using [Socket.IO]
+* [Live]: latest measurements
+* [Archive]: historical data
+* [Push]: real-time feed using [Socket.IO]
 
 ## License
 
@@ -25,6 +25,6 @@ To use data from Pioupiou stations, you must comply with the license available o
 
 ## Announcements
 
-To get notified with technical evolutions and scheduled maintenance, we invite you to join our low-traffic Announce Mailing List :
+To receive notifications on technical evolutions and scheduled maintenance, we invite you to join our low-traffic Pioupiou-Devs-Announce Mailing List:
 
 [https://groups.google.com/forum/#!forum/pioupiou-devs-announce/join](https://groups.google.com/forum/#!forum/pioupiou-devs-announce/join)

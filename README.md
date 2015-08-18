@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository hosts the documentation for Pioupiou API
+This repository hosts the documentation for the Pioupiou API
 
 ## Usage
 
