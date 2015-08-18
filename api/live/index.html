@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Nicolas Baldeck">
+        <link rel="canonical" href="http://developers.pioupiou.fr/api/live/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>API Description - Pioupiou for Devs</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Pioupiou for Devs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">API <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Live</a>
+    <ul class="dropdown-menu">
+        
+            
+<li class="active">
+    <a href="./">API Description</a>
+</li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Examples</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="examples/jquery/">JavaScript (JQuery)</a>
+</li>
+
+        
+            
+<li >
+    <a href="examples/javascript/">JavaScript (XMLHttpRequest)</a>
+</li>
+
+        
+            
+<li >
+    <a href="examples/nodejs/">NodeJS</a>
+</li>
+
+        
+            
+<li >
+    <a href="examples/php/">PHP</a>
+</li>
+
+        
+            
+<li >
+    <a href="examples/java/">Java</a>
+</li>
+
+        
+            
+<li >
+    <a href="examples/python/">Python</a>
+</li>
+
+        
+            
+<li >
+    <a href="examples/objective-c/">Objective-C</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Archive</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../archive/">API Description</a>
+</li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Examples</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../archive/examples/jquery/">JavaScript (JQuery)</a>
+</li>
+
+        
+            
+<li >
+    <a href="../archive/examples/javascript/">JavaScript (XMLHttpRequest)</a>
+</li>
+
+        
+            
+<li >
+    <a href="../archive/examples/nodejs/">NodeJS</a>
+</li>
+
+        
+            
+<li >
+    <a href="../archive/examples/php/">PHP</a>
+</li>
+
+        
+            
+<li >
+    <a href="../archive/examples/java/">Java</a>
+</li>
+
+        
+            
+<li >
+    <a href="../archive/examples/python/">Python</a>
+</li>
+
+        
+            
+<li >
+    <a href="../archive/examples/objective-c/">Objective-C</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+<li >
+    <a href="../push/">Push</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../support/">Get support</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../data-licensing/">Data licensing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../bug-tracker/">Bug tracker</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../release-notes/">Release Notes</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="examples/jquery/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/bacpluszero/pioupiou-for-devs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#live-api">Live API</a></li>
+        
+            <li><a href="#license">License</a></li>
+        
+            <li><a href="#endpoints">Endpoints</a></li>
+        
+            <li><a href="#arguments">Arguments</a></li>
+        
+            <li><a href="#responses">Responses</a></li>
+        
+            <li><a href="#error-codes">Error codes</a></li>
+        
+            <li><a href="#jsonp-and-cors">JSONP and CORS</a></li>
+        
+            <li><a href="#limitations">Limitations</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="live-api">Live API<a class="headerlink" href="#live-api" title="Permanent link">&para;</a></h1>
+<p>The Live API provides access to latest measurements from <strong>one station</strong> or <strong>all stations</strong>.</p>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
+<p>To use data from Pioupiou stations, you must comply with the license available on the <a href="../../data-licensing/">Data Licensing</a> page.</p>
+<h2 id="endpoints">Endpoints<a class="headerlink" href="#endpoints" title="Permanent link">&para;</a></h2>
+<pre><code class="bash"># latest measurements only
+GET http://api.pioupiou.fr/v1/live/{station_id}
+</code></pre>
+
+<pre><code class="bash"># latest measurements with complete metadata
+GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
+</code></pre>
+
+<h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h2>
+<pre><code class="bash"># for a single station
+{station_id} : Numeric ID of the station
+</code></pre>
+
+<pre><code class="bash"># for all stations
+{station_id} : &quot;all&quot;
+</code></pre>
+
+<h2 id="responses">Responses<a class="headerlink" href="#responses" title="Permanent link">&para;</a></h2>
+<p>The <strong>Live</strong> API provides JSON responses.</p>
+<h3 id="response-examples">Response examples<a class="headerlink" href="#response-examples" title="Permanent link">&para;</a></h3>
+<h4 id="single-station-latest-measurements-only">Single station, latest measurements only<a class="headerlink" href="#single-station-latest-measurements-only" title="Permanent link">&para;</a></h4>
+<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live-with-meta/110&quot;
+</code></pre>
+
+<pre><code class="json">{
+  &quot;doc&quot;: &quot;http://developers.pioupiou.fr/api/live/&quot;,
+  &quot;license&quot;: &quot;http://developers.pioupiou.fr/data-licensing&quot;,
+  &quot;attribution&quot;: &quot;(c) contributors of the Pioupiou wind network &lt;http://pioupiou.fr&gt;&quot;,
+  &quot;data&quot;: {
+    &quot;id&quot;: 110,
+    &quot;meta&quot;: {
+      &quot;name&quot;: &quot;Pioupiou 110&quot;
+    },
+    &quot;location&quot;: {
+      &quot;latitude&quot;: 51.368464,
+      &quot;longitude&quot;: 3.458852,
+      &quot;date&quot;: &quot;2015-08-16T14:26:01.000Z&quot;,
+      &quot;success&quot;: true
+    },
+    &quot;measurements&quot;: {
+      &quot;date&quot;: &quot;2015-08-17T22:07:27.000Z&quot;,
+      &quot;pressure&quot;: 1020.6,
+      &quot;wind_heading&quot;: 292.5,
+      &quot;wind_speed_avg&quot;: 14,
+      &quot;wind_speed_max&quot;: 22.5,
+      &quot;wind_speed_min&quot;: 7
+    },
+    &quot;status&quot;: {
+      &quot;date&quot;: &quot;2015-08-17T22:07:27.000Z&quot;,
+      &quot;snr&quot;: 23.03,
+      &quot;state&quot;: &quot;on&quot;
+    }
+  }
+}
+</code></pre>
+
+<h4 id="single-station-latest-measurements-with-complete-metadata">Single station, latest measurements with complete metadata<a class="headerlink" href="#single-station-latest-measurements-with-complete-metadata" title="Permanent link">&para;</a></h4>
+<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live/110&quot;
+</code></pre>
+
+<pre><code class="json">{
+  &quot;doc&quot;: &quot;http://developers.pioupiou.fr/api/live/&quot;,
+  &quot;license&quot;: &quot;http://developers.pioupiou.fr/data-licensing&quot;,
+  &quot;attribution&quot;: &quot;(c) contributors of the Pioupiou wind network &lt;http://pioupiou.fr&gt;&quot;,
+  &quot;data&quot;: {
+    &quot;id&quot;: 110,
+    &quot;meta&quot;: {
+      &quot;name&quot;: &quot;Pioupiou 110&quot;,
+      &quot;description&quot;: null,
+      &quot;picture&quot;: null,
+      &quot;date&quot;: null,
+      &quot;rating&quot;: {
+        &quot;upvotes&quot;: 0,
+        &quot;downvotes&quot;: 0
+      }
+    },
+    &quot;location&quot;: {
+      &quot;latitude&quot;: 51.368464,
+      &quot;longitude&quot;: 3.458852,
+      &quot;date&quot;: &quot;2015-08-16T14:26:01.000Z&quot;,
+      &quot;success&quot;: true
+    },
+    &quot;measurements&quot;: {
+      &quot;date&quot;: &quot;2015-08-17T22:19:31.000Z&quot;,
+      &quot;pressure&quot;: 1020.6,
+      &quot;wind_heading&quot;: 292.5,
+      &quot;wind_speed_avg&quot;: 12,
+      &quot;wind_speed_max&quot;: 21,
+      &quot;wind_speed_min&quot;: 6.5
+    },
+    &quot;status&quot;: {
+      &quot;date&quot;: &quot;2015-08-17T22:19:31.000Z&quot;,
+      &quot;snr&quot;: 23.01,
+      &quot;state&quot;: &quot;on&quot;
+    }
+  }
+}
+</code></pre>
+
+<h4 id="all-stations-latest-measurements-only">All stations, latest measurements only<a class="headerlink" href="#all-stations-latest-measurements-only" title="Permanent link">&para;</a></h4>
+<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live/all&quot;
+</code></pre>
+
+<pre><code class="json">{
+  &quot;doc&quot;: &quot;http://developers.pioupiou.fr/api/live/&quot;,
+  &quot;license&quot;: &quot;http://developers.pioupiou.fr/data-licensing&quot;,
+  &quot;attribution&quot;: &quot;(c) contributors of the Pioupiou wind network &lt;http://pioupiou.fr&gt;&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;meta&quot;: {
+        &quot;name&quot;: &quot;Pioupiou 1&quot;,
+      },
+      &quot;location&quot;: {
+        &quot;latitude&quot;: 0,
+        &quot;longitude&quot;: 0,
+        &quot;date&quot;: null,
+        &quot;success&quot;: false
+      },
+      &quot;measurements&quot;: {
+        &quot;date&quot;: &quot;2015-08-18T08:19:46.000Z&quot;,
+        &quot;pressure&quot;: 986,
+        &quot;wind_heading&quot;: 157.5,
+        &quot;wind_speed_avg&quot;: 2,
+        &quot;wind_speed_max&quot;: 4,
+        &quot;wind_speed_min&quot;: 0
+      },
+      &quot;status&quot;: {
+        &quot;date&quot;: &quot;2015-08-18T08:19:46.000Z&quot;,
+        &quot;snr&quot;: 23.24,
+        &quot;state&quot;: &quot;on&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 27,
+      &quot;meta&quot;: {
+        &quot;name&quot;: &quot;Pioupiou 27&quot;,
+      },
+      &quot;location&quot;: {
+        &quot;latitude&quot;: 44.907284,
+        &quot;longitude&quot;: 5.677965,
+        &quot;date&quot;: &quot;2015-08-15T13:48:38.000Z&quot;,
+        &quot;success&quot;: true
+      },
+      &quot;measurements&quot;: {
+        &quot;date&quot;: &quot;2015-08-18T08:18:26.000Z&quot;,
+        &quot;pressure&quot;: 952.5,
+        &quot;wind_heading&quot;: 45,
+        &quot;wind_speed_avg&quot;: 15,
+        &quot;wind_speed_max&quot;: 17.5,
+        &quot;wind_speed_min&quot;: 10.5
+      },
+      &quot;status&quot;: {
+        &quot;date&quot;: &quot;2015-08-18T08:18:26.000Z&quot;,
+        &quot;snr&quot;: 12.01,
+        &quot;state&quot;: &quot;on&quot;
+      }
+    },
+    {...more stations...},
+    {...more stations...}
+  ]
+}
+</code></pre>
+
+<h4 id="all-stations-latest-measurements-with-complete-metadata">All stations, latest measurements with complete metadata<a class="headerlink" href="#all-stations-latest-measurements-with-complete-metadata" title="Permanent link">&para;</a></h4>
+<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live-with-meta/all&quot;
+</code></pre>
+
+<pre><code class="json">{
+  &quot;doc&quot;: &quot;http://developers.pioupiou.fr/api/live/&quot;,
+  &quot;license&quot;: &quot;http://developers.pioupiou.fr/data-licensing&quot;,
+  &quot;attribution&quot;: &quot;(c) contributors of the Pioupiou wind network &lt;http://pioupiou.fr&gt;&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;meta&quot;: {
+        &quot;name&quot;: &quot;Pioupiou 1&quot;,
+        &quot;description&quot;: null,
+        &quot;picture&quot;: null,
+        &quot;date&quot;: null,
+        &quot;rating&quot;: {
+          &quot;upvotes&quot;: 0,
+          &quot;downvotes&quot;: 0
+        }
+      },
+      &quot;location&quot;: {
+        &quot;latitude&quot;: 0,
+        &quot;longitude&quot;: 0,
+        &quot;date&quot;: null,
+        &quot;success&quot;: false
+      },
+      &quot;measurements&quot;: {
+        &quot;date&quot;: &quot;2015-08-18T08:19:46.000Z&quot;,
+        &quot;pressure&quot;: 986,
+        &quot;wind_heading&quot;: 157.5,
+        &quot;wind_speed_avg&quot;: 2,
+        &quot;wind_speed_max&quot;: 4,
+        &quot;wind_speed_min&quot;: 0
+      },
+      &quot;status&quot;: {
+        &quot;date&quot;: &quot;2015-08-18T08:19:46.000Z&quot;,
+        &quot;snr&quot;: 23.24,
+        &quot;state&quot;: &quot;on&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 27,
+      &quot;meta&quot;: {
+        &quot;name&quot;: &quot;Pioupiou 27&quot;,
+        &quot;description&quot;: null,
+        &quot;picture&quot;: null,
+        &quot;date&quot;: null,
+        &quot;rating&quot;: {
+          &quot;upvotes&quot;: 0,
+          &quot;downvotes&quot;: 0
+        }
+      },
+      &quot;location&quot;: {
+        &quot;latitude&quot;: 44.907284,
+        &quot;longitude&quot;: 5.677965,
+        &quot;date&quot;: &quot;2015-08-15T13:48:38.000Z&quot;,
+        &quot;success&quot;: true
+      },
+      &quot;measurements&quot;: {
+        &quot;date&quot;: &quot;2015-08-18T08:18:26.000Z&quot;,
+        &quot;pressure&quot;: 952.5,
+        &quot;wind_heading&quot;: 45,
+        &quot;wind_speed_avg&quot;: 15,
+        &quot;wind_speed_max&quot;: 17.5,
+        &quot;wind_speed_min&quot;: 10.5
+      },
+      &quot;status&quot;: {
+        &quot;date&quot;: &quot;2015-08-18T08:18:26.000Z&quot;,
+        &quot;snr&quot;: 12.01,
+        &quot;state&quot;: &quot;on&quot;
+      }
+    },
+    {...more stations...},
+    {...more stations...}
+  ]
+}
+</code></pre>
+
+<h3 id="responses-parameters-details">Responses parameters details<a class="headerlink" href="#responses-parameters-details" title="Permanent link">&para;</a></h3>
+<p>A <code>data</code> object is returned. It contains a single station <code>{}</code> or an array of all stations<code>[{},{}..{},{}]</code>.</p>
+<p>Every station contains the following parameters :</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>live</th>
+<th>live-with-meta</th>
+<th>Description</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>x</td>
+<td>x</td>
+<td>Numeric ID of the station</td>
+<td></td>
+</tr>
+<tr>
+<td>meta.name</td>
+<td>x</td>
+<td>x</td>
+<td>Name of the station</td>
+<td></td>
+</tr>
+<tr>
+<td>meta.description</td>
+<td></td>
+<td>x</td>
+<td>Description of the station, or <strong>null</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>meta.picture</td>
+<td></td>
+<td>x</td>
+<td>URL of station's picture, or <strong>null</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>meta.date</td>
+<td></td>
+<td>x</td>
+<td>Date of last metadata update, or <strong>null</strong></td>
+<td>ISO 8601, UTC</td>
+</tr>
+<tr>
+<td>meta.rating.upvotes</td>
+<td></td>
+<td>x</td>
+<td>Station rating : Positive votes count</td>
+<td></td>
+</tr>
+<tr>
+<td>meta.rating.downvotes</td>
+<td></td>
+<td>x</td>
+<td>Station rating : Negative votes count</td>
+<td></td>
+</tr>
+<tr>
+<td>location.latitude</td>
+<td>x</td>
+<td>x</td>
+<td>Last known Latitude of the station, or <strong>null</strong></td>
+<td>WGS84</td>
+</tr>
+<tr>
+<td>location.longitude</td>
+<td>x</td>
+<td>x</td>
+<td>Last known Longitude of the station, or <strong>null</strong></td>
+<td>WGS84</td>
+</tr>
+<tr>
+<td>location.date</td>
+<td>x</td>
+<td>x</td>
+<td>Date of last location update (succeed or failed), or <strong>null</strong></td>
+<td>ISO 8601, UTC</td>
+</tr>
+<tr>
+<td>location.success</td>
+<td>x</td>
+<td>x</td>
+<td>Is the last known position still valid ? <strong>true</strong> or <strong>false</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>measurements.date</td>
+<td>x</td>
+<td>x</td>
+<td>Date of last measurements, or <strong>null</strong></td>
+<td>ISO 8601, UTC</td>
+</tr>
+<tr>
+<td>measurements.pressure</td>
+<td>x</td>
+<td>x</td>
+<td>Atmospheric pressure, or <strong>null</strong> (The absolute pressure is quite inaccurate. This parameter is intended for monitoring the relative variations)</td>
+<td>hPa</td>
+</tr>
+<tr>
+<td>measurements.wind_heading</td>
+<td>x</td>
+<td>x</td>
+<td>Wind heading, or <strong>null</strong> (0° means the wind is blowing from North to Sud)</td>
+<td>degrees</td>
+</tr>
+<tr>
+<td>measurements.wind_speed_avg</td>
+<td>x</td>
+<td>x</td>
+<td>Wind speed average, or <strong>null</strong> (over the last 4 minutes before measurements.date, divide by 1.852 for converting to knots)</td>
+<td>km/h</td>
+</tr>
+<tr>
+<td>measurements.wind_speed_min</td>
+<td>x</td>
+<td>x</td>
+<td>Minimum wind speed, or <strong>null</strong> (over the last 4 minutes before measurements.date, divide by 1.852 for converting to knots)</td>
+<td>km/h</td>
+</tr>
+<tr>
+<td>measurements.wind_speed_max</td>
+<td>x</td>
+<td>x</td>
+<td>Maximum wind speed, or <strong>null</strong> (over the last 4 minutes before measurements.date, divide by 1.852 for converting to knots)</td>
+<td>km/h</td>
+</tr>
+<tr>
+<td>status.date</td>
+<td>x</td>
+<td>x</td>
+<td>Date of the last contact with the station, or <strong>null</strong></td>
+<td>ISO 8601, UTC</td>
+</tr>
+<tr>
+<td>status.snr</td>
+<td>x</td>
+<td>x</td>
+<td>Signal-to-Noise ratio = radio link quality, or <strong>null</strong> (&lt;10 : bad, &gt;20: very good)</td>
+<td>dB</td>
+</tr>
+<tr>
+<td>status.state</td>
+<td>x</td>
+<td>x</td>
+<td>Station power state, <strong>"on"</strong>, <strong>"off"</strong> or <strong>null</strong>. "off" means that the station have been shutdown by pressing it's power switch.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="error-codes">Error codes<a class="headerlink" href="#error-codes" title="Permanent link">&para;</a></h2>
+<p>An <code>HTTP/1.1 200 OK</code> header is sent when the request is successful.
+HTTP status code other than <code>200</code> means that an error has occured.</p>
+<p>In most case, the application will return a JSON object, containing details about the error.</p>
+<pre><code class="bash">$ curl -i &quot;http://api.pioupiou.fr/v1/live/999999&quot;
+</code></pre>
+
+<pre><code class="json">HTTP/1.1 404 Not Found
+
+{
+  &quot;error_code&quot;: &quot;station_not_found&quot;,
+  &quot;error_message&quot;: &quot;unable to find station with this {station_id}&quot;
+}
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>error_code</th>
+<th>HTTP code</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>station_not_found</td>
+<td>404</td>
+<td>The requested station is not in the database</td>
+</tr>
+<tr>
+<td>missing_argument</td>
+<td>400</td>
+<td>The station ID is missing or invalid</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Error detection:</p>
+<p>For reliable error detection, your application must monitor the HTTP code instead of the JSON response.</p>
+</div>
+<h2 id="jsonp-and-cors">JSONP and CORS<a class="headerlink" href="#jsonp-and-cors" title="Permanent link">&para;</a></h2>
+<p>The API supports cross-origin requests.</p>
+<h3 id="cross-origin-resource-sharing">Cross-Origin Resource Sharing<a class="headerlink" href="#cross-origin-resource-sharing" title="Permanent link">&para;</a></h3>
+<p>An <code>Access-Control-Allow-Origin: *</code> header is sent with all responses. It means that you can call the API directly from your javascript page.</p>
+<h3 id="jsonp">JSONP<a class="headerlink" href="#jsonp" title="Permanent link">&para;</a></h3>
+<p>JSONP is also supported, even if it's use is no longer encouraged.</p>
+<p>The name of the callback function must be placed in query string <code>callback</code> argument :</p>
+<pre><code class="bash">$ curl -i &quot;http://api.pioupiou.fr/v1/live/1?callback=myCallBackFunction&quot;
+</code></pre>
+
+<pre><code class="json">HTTP/1.1 200 OK
+Content-Type: text/javascript; charset=utf-8
+
+/**/ typeof myCallBackFunction === 'function' &amp;&amp; myCallBackFunction({
+  &quot;doc&quot;: &quot;http://developers.pioupiou.fr/api/live/&quot;,
+  &quot;license&quot;: &quot;http://pioupiou.fr/license/data&quot;,
+  &quot;attribution&quot;: &quot;(c) contributors of the Pioupiou wind network &lt;http://pioupiou.fr&gt;&quot;,
+  &quot;data&quot;: {
+    &quot;id&quot;: 1,
+    &quot;meta&quot;: {
+      &quot;name&quot;: &quot;Pioupiou 1&quot;
+    },
+    &quot;location&quot;: {
+      &quot;latitude&quot;: 0,
+      &quot;longitude&quot;: 0,
+      &quot;date&quot;: null,
+      &quot;success&quot;: false
+    },
+    &quot;measurements&quot;: {
+      &quot;date&quot;: &quot;2015-08-18T08:55:46.000Z&quot;,
+      &quot;pressure&quot;: 986,
+      &quot;wind_heading&quot;: 157.5,
+      &quot;wind_speed_avg&quot;: 2,
+      &quot;wind_speed_max&quot;: 3,
+      &quot;wind_speed_min&quot;: 1
+    },
+    &quot;status&quot;: {
+      &quot;date&quot;: &quot;2015-08-18T08:55:46.000Z&quot;,
+      &quot;snr&quot;: 23.31,
+      &quot;state&quot;: &quot;on&quot;
+    }
+  }
+});
+</code></pre>
+
+<h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">&para;</a></h2>
+<p>Updates for <strong>all stations</strong> or a <strong>single station</strong> should not be requested more often than every 60 seconds. If you need real-time information, please use the <a href="./../push/">Push API</a>.</p>
+<p>If you use this API for a high-traffic application, you have to set-up your own cache server.</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p>Copyright &copy; 2015 Bac Plus Zéro SAS - This documentation is licensed under  <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-By 4.0</a>.</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
