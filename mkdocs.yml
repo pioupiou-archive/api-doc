@@ -1,0 +1,53 @@
+site_name: Pioupiou for Devs
+site_url: http://developers.pioupiou.fr
+site_description: Documentation for Pioupiou API
+site_author: Nicolas Baldeck
+
+repo_url: https://github.com/bacpluszero/pioupiou-for-devs
+
+pages:
+- Home: index.md
+- API:
+  - Live:
+    - API Description: api/live/index.md
+    - Examples :
+      - JavaScript (JQuery) : api/live/examples/jquery.md
+      - JavaScript (XMLHttpRequest) : api/live/examples/javascript.md
+      - NodeJS : api/live/examples/nodejs.md
+      - PHP : api/live/examples/php.md
+      - Java : api/live/examples/java.md
+      - Python : api/live/examples/python.md
+      - Objective-C : api/live/examples/objective-c.md
+  - Archive:
+    - API Description: api/archive/index.md
+    - Examples :
+      - JavaScript (JQuery) : api/archive/examples/jquery.md
+      - JavaScript (XMLHttpRequest) : api/archive/examples/javascript.md
+      - NodeJS : api/archive/examples/nodejs.md
+      - PHP : api/archive/examples/php.md
+      - Java : api/archive/examples/java.md
+      - Python : api/archive/examples/python.md
+      - Objective-C : api/archive/examples/objective-c.md
+#  - Edit: test.md
+  - Push: api/push/index.md
+#- Widgets:
+#  - Live:
+#    - Live: test.md
+#  - Archive: test.md
+#  - Edit: test.md
+#  - Push: test.md
+- More:
+  - Get support: support.md
+  - Data licensing: data-licensing.md
+#  - Usage policy: usage-policy.md
+#  - Service status: http://status.pioupiou.fr
+  - Bug tracker: bug-tracker.md
+  - Contribute: contribute.md
+  - Release Notes: release-notes.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition:
+  
+copyright: Copyright &copy; 2015 Bac Plus Zéro SAS - This documentation is licensed under  <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-By 4.0</a>.
