@@ -24,14 +24,14 @@ Name | Description |
 
 ### Dates format
 
-We support the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) format for passing dates and times. Not specifying a timezone defaults the timezone to UTC.
+Dates and times are specified using the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) format. The default timezone is UTC.
 
-The full representation is of the format:
+The full representation uses the following format:
 ```
 yyyy-MM-ddTHH:mm:ss.SSSZ
 ```
 
-This table illustrates some example valid dates and times:
+The following table shows examples of valid dates and times:
 
 Sample | Description
 -------| -----------
@@ -44,13 +44,13 @@ Sample | Description
 2015-08-23T18:45+0200 | Amounts to 2015-08-23T18:45:00.000+0200 (Paris, CET − Summer DST)
 2015-01-01T18:45+0100 | Amounts to 2015-01-01T18:45:00.000+0100 (Paris, CET − Winter DST)
 
-To avoid errors, we recommend always use UTC dates and times.
+To avoid errors, we recommend to always use UTC dates and times.
 
 You can directly use date from [Javascript](http://www.w3schools.com/jsref/jsref_toisostring.asp)'s ```new Date().toISOString()``` or [PHP](http://php.net/manual/en/function.date.php)'s ```date("c")```.
 
 ## Responses
 
-The **Live** API provides JSON respo[nses.
+The **Live** API provides JSON responses.
 
 ### Response examples
 #### May 2015, JSON
@@ -163,10 +163,10 @@ utc     degrees degrees km/h    km/h    km/h    degrees hPa
 
 ## Error codes
 
-An ```HTTP/1.1 200 OK``` header is sent when the request is successful.
+An ```HTTP/1.1 200 OK``` header is sent on successful request.
 HTTP status code other than ```200``` means that an error has occured.
 
-In most case, the application will return a JSON object, containing details about the error.
+In most cases the application will return a JSON object, including details about the error.
 
 ```bash
 $ curl -i "http://api.pioupiou.fr/v1/archive/999999?start=last-hour&stop=now"
@@ -198,9 +198,9 @@ The API supports cross-origin requests.
 An ```Access-Control-Allow-Origin: *``` header is sent with all responses. It means that you can call the API directly from your javascript page.
 
 ### JSONP
-When output format is JSON, JSONP is also supported, even if it's use is no longer encouraged.
+When output format is JSON, JSONP is also supported, even if its use is no longer encouraged.
 
-The name of the callback function must be placed in query string ```callback``` argument :
+The name of the callback function must be placed in query string ```callback``` argument:
 
 ```bash
 curl -i "http://api.pioupiou.fr/v1/archive/110?start=last-hour&stop=now&callback=myCallBackFunction"
@@ -236,6 +236,6 @@ Content-Type: text/javascript; charset=utf-8
 ## Limitations
 
 Maximum request size is 31 days.
-You can only request one station at a time.
+You can only request data from one station at a time.
 
 The Archive API might be slower than the other APIs.
