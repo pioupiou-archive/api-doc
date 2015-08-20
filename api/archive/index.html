@@ -349,12 +349,12 @@
 </tbody>
 </table>
 <h3 id="dates-format">Dates format<a class="headerlink" href="#dates-format" title="Permanent link">&para;</a></h3>
-<p>We support the <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> format for passing dates and times. Not specifying a timezone defaults the timezone to UTC.</p>
-<p>The full representation is of the format:</p>
+<p>Dates and times are specified using the <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> format. The default timezone is UTC.</p>
+<p>The full representation uses the following format:</p>
 <pre><code>yyyy-MM-ddTHH:mm:ss.SSSZ
 </code></pre>
 
-<p>This table illustrates some example valid dates and times:</p>
+<p>The following table shows examples of valid dates and times:</p>
 <table>
 <thead>
 <tr>
@@ -397,10 +397,10 @@
 </tr>
 </tbody>
 </table>
-<p>To avoid errors, we recommend always use UTC dates and times.</p>
+<p>To avoid errors, we recommend to always use UTC dates and times.</p>
 <p>You can directly use date from <a href="http://www.w3schools.com/jsref/jsref_toisostring.asp">Javascript</a>'s <code>new Date().toISOString()</code> or <a href="http://php.net/manual/en/function.date.php">PHP</a>'s <code>date("c")</code>.</p>
 <h2 id="responses">Responses<a class="headerlink" href="#responses" title="Permanent link">&para;</a></h2>
-<p>The <strong>Live</strong> API provides JSON respo[nses.</p>
+<p>The <strong>Live</strong> API provides JSON responses.</p>
 <h3 id="response-examples">Response examples<a class="headerlink" href="#response-examples" title="Permanent link">&para;</a></h3>
 <h4 id="may-2015-json">May 2015, JSON<a class="headerlink" href="#may-2015-json" title="Permanent link">&para;</a></h4>
 <pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/archive/1?start=2015-05&amp;stop=2015-06&quot;
@@ -505,9 +505,9 @@ utc     degrees degrees km/h    km/h    km/h    degrees hPa
 </code></pre>
 
 <h2 id="error-codes">Error codes<a class="headerlink" href="#error-codes" title="Permanent link">&para;</a></h2>
-<p>An <code>HTTP/1.1 200 OK</code> header is sent when the request is successful.
+<p>An <code>HTTP/1.1 200 OK</code> header is sent on successful request.
 HTTP status code other than <code>200</code> means that an error has occured.</p>
-<p>In most case, the application will return a JSON object, containing details about the error.</p>
+<p>In most cases the application will return a JSON object, including details about the error.</p>
 <pre><code class="bash">$ curl -i &quot;http://api.pioupiou.fr/v1/archive/999999?start=last-hour&amp;stop=now&quot;
 </code></pre>
 
@@ -559,8 +559,8 @@ HTTP status code other than <code>200</code> means that an error has occured.</p
 <h3 id="cross-origin-resource-sharing">Cross-Origin Resource Sharing<a class="headerlink" href="#cross-origin-resource-sharing" title="Permanent link">&para;</a></h3>
 <p>An <code>Access-Control-Allow-Origin: *</code> header is sent with all responses. It means that you can call the API directly from your javascript page.</p>
 <h3 id="jsonp">JSONP<a class="headerlink" href="#jsonp" title="Permanent link">&para;</a></h3>
-<p>When output format is JSON, JSONP is also supported, even if it's use is no longer encouraged.</p>
-<p>The name of the callback function must be placed in query string <code>callback</code> argument :</p>
+<p>When output format is JSON, JSONP is also supported, even if its use is no longer encouraged.</p>
+<p>The name of the callback function must be placed in query string <code>callback</code> argument:</p>
 <pre><code class="bash">curl -i &quot;http://api.pioupiou.fr/v1/archive/110?start=last-hour&amp;stop=now&amp;callback=myCallBackFunction&quot;
 </code></pre>
 
@@ -593,7 +593,7 @@ Content-Type: text/javascript; charset=utf-8
 
 <h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">&para;</a></h2>
 <p>Maximum request size is 31 days.
-You can only request one station at a time.</p>
+You can only request data from one station at a time.</p>
 <p>The Archive API might be slower than the other APIs.</p></div>
             
         </div>
