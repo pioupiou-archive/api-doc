@@ -33,7 +33,7 @@ The **Live** API provides JSON responses.
 #### Single station, latest measurements only
 
 ```bash
-$ curl "http://api.pioupiou.fr/v1/live-with-meta/110"
+$ curl "http://api.pioupiou.fr/v1/live/110"
 ```
 ```json
 {
@@ -72,7 +72,7 @@ $ curl "http://api.pioupiou.fr/v1/live-with-meta/110"
 #### Single station, latest measurements with complete metadata
 
 ```bash
-$ curl "http://api.pioupiou.fr/v1/live/110"
+$ curl "http://api.pioupiou.fr/v1/live-with-meta/110"
 ```
 ```json
 {
