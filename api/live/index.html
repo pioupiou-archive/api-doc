@@ -332,7 +332,7 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
 <p>The <strong>Live</strong> API provides JSON responses.</p>
 <h3 id="response-examples">Response examples<a class="headerlink" href="#response-examples" title="Permanent link">&para;</a></h3>
 <h4 id="single-station-latest-measurements-only">Single station, latest measurements only<a class="headerlink" href="#single-station-latest-measurements-only" title="Permanent link">&para;</a></h4>
-<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live-with-meta/110&quot;
+<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live/110&quot;
 </code></pre>
 
 <pre><code class="json">{
@@ -352,7 +352,7 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
     },
     &quot;measurements&quot;: {
       &quot;date&quot;: &quot;2015-08-17T22:07:27.000Z&quot;,
-      &quot;pressure&quot;: 1020.6,
+      &quot;pressure&quot;: null,
       &quot;wind_heading&quot;: 292.5,
       &quot;wind_speed_avg&quot;: 14,
       &quot;wind_speed_max&quot;: 22.5,
@@ -368,7 +368,7 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
 </code></pre>
 
 <h4 id="single-station-latest-measurements-with-complete-metadata">Single station, latest measurements with complete metadata<a class="headerlink" href="#single-station-latest-measurements-with-complete-metadata" title="Permanent link">&para;</a></h4>
-<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live/110&quot;
+<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live-with-meta/110&quot;
 </code></pre>
 
 <pre><code class="json">{
@@ -395,7 +395,7 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
     },
     &quot;measurements&quot;: {
       &quot;date&quot;: &quot;2015-08-17T22:19:31.000Z&quot;,
-      &quot;pressure&quot;: 1020.6,
+      &quot;pressure&quot;: null,
       &quot;wind_heading&quot;: 292.5,
       &quot;wind_speed_avg&quot;: 12,
       &quot;wind_speed_max&quot;: 21,
@@ -432,7 +432,7 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
       },
       &quot;measurements&quot;: {
         &quot;date&quot;: &quot;2015-08-18T08:19:46.000Z&quot;,
-        &quot;pressure&quot;: 986,
+        &quot;pressure&quot;: null,
         &quot;wind_heading&quot;: 157.5,
         &quot;wind_speed_avg&quot;: 2,
         &quot;wind_speed_max&quot;: 4,
@@ -457,7 +457,7 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
       },
       &quot;measurements&quot;: {
         &quot;date&quot;: &quot;2015-08-18T08:18:26.000Z&quot;,
-        &quot;pressure&quot;: 952.5,
+        &quot;pressure&quot;: null,
         &quot;wind_heading&quot;: 45,
         &quot;wind_speed_avg&quot;: 15,
         &quot;wind_speed_max&quot;: 17.5,
@@ -504,7 +504,7 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
       },
       &quot;measurements&quot;: {
         &quot;date&quot;: &quot;2015-08-18T08:19:46.000Z&quot;,
-        &quot;pressure&quot;: 986,
+        &quot;pressure&quot;: null,
         &quot;wind_heading&quot;: 157.5,
         &quot;wind_speed_avg&quot;: 2,
         &quot;wind_speed_max&quot;: 4,
@@ -536,7 +536,7 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
       },
       &quot;measurements&quot;: {
         &quot;date&quot;: &quot;2015-08-18T08:18:26.000Z&quot;,
-        &quot;pressure&quot;: 952.5,
+        &quot;pressure&quot;: null,
         &quot;wind_heading&quot;: 45,
         &quot;wind_speed_avg&quot;: 15,
         &quot;wind_speed_max&quot;: 17.5,
@@ -656,8 +656,8 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
 <td>measurements.pressure</td>
 <td>x</td>
 <td>x</td>
-<td>Atmospheric pressure, or <strong>null</strong> (The absolute pressure is quite inaccurate. This parameter is intended for monitoring the relative variations)</td>
-<td>hPa</td>
+<td><strong>null</strong> (deprecated)</td>
+<td></td>
 </tr>
 <tr>
 <td>measurements.wind_heading</td>
@@ -780,7 +780,7 @@ Content-Type: text/javascript; charset=utf-8
     },
     &quot;measurements&quot;: {
       &quot;date&quot;: &quot;2015-08-18T08:55:46.000Z&quot;,
-      &quot;pressure&quot;: 986,
+      &quot;pressure&quot;: null,
       &quot;wind_heading&quot;: 157.5,
       &quot;wind_speed_avg&quot;: 2,
       &quot;wind_speed_max&quot;: 3,
