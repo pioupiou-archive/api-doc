@@ -53,7 +53,7 @@ $ curl "http://api.pioupiou.fr/v1/live/110"
     },
     "measurements": {
       "date": "2015-08-17T22:07:27.000Z",
-      "pressure": 1020.6,
+      "pressure": null,
       "wind_heading": 292.5,
       "wind_speed_avg": 14,
       "wind_speed_max": 22.5,
@@ -99,7 +99,7 @@ $ curl "http://api.pioupiou.fr/v1/live-with-meta/110"
     },
     "measurements": {
       "date": "2015-08-17T22:19:31.000Z",
-      "pressure": 1020.6,
+      "pressure": null,
       "wind_heading": 292.5,
       "wind_speed_avg": 12,
       "wind_speed_max": 21,
@@ -137,7 +137,7 @@ $ curl "http://api.pioupiou.fr/v1/live/all"
       },
       "measurements": {
         "date": "2015-08-18T08:19:46.000Z",
-        "pressure": 986,
+        "pressure": null,
         "wind_heading": 157.5,
         "wind_speed_avg": 2,
         "wind_speed_max": 4,
@@ -162,7 +162,7 @@ $ curl "http://api.pioupiou.fr/v1/live/all"
       },
       "measurements": {
         "date": "2015-08-18T08:18:26.000Z",
-        "pressure": 952.5,
+        "pressure": null,
         "wind_heading": 45,
         "wind_speed_avg": 15,
         "wind_speed_max": 17.5,
@@ -212,7 +212,7 @@ $ curl "http://api.pioupiou.fr/v1/live-with-meta/all"
       },
       "measurements": {
         "date": "2015-08-18T08:19:46.000Z",
-        "pressure": 986,
+        "pressure": null,
         "wind_heading": 157.5,
         "wind_speed_avg": 2,
         "wind_speed_max": 4,
@@ -244,7 +244,7 @@ $ curl "http://api.pioupiou.fr/v1/live-with-meta/all"
       },
       "measurements": {
         "date": "2015-08-18T08:18:26.000Z",
-        "pressure": 952.5,
+        "pressure": null,
         "wind_heading": 45,
         "wind_speed_avg": 15,
         "wind_speed_max": 17.5,
@@ -282,7 +282,7 @@ location.longitude | x | x | Last known Longitude of the station, or **null** | 
 location.date | x | x | Date of last location update (succeed or failed), or **null** | ISO 8601, UTC
 location.success | x | x | Is the last known position still valid ? **true** or **false**
 measurements.date | x | x | Date of last measurements, or **null** | ISO 8601, UTC
-measurements.pressure | x | x | Atmospheric pressure, or **null** (The absolute pressure is quite inaccurate. This parameter is intended for monitoring the relative variations) | hPa
+measurements.pressure | x | x | **null** (deprecated)
 measurements.wind_heading | x | x | Wind heading, or **null** (0° means the wind is blowing from North to Sud) | degrees
 measurements.wind_speed_avg | x | x | Wind speed average, or **null** (over the last 4 minutes before measurements.date, divide by 1.852 for converting to knots) | km/h
 measurements.wind_speed_min | x | x | Minimum wind speed, or **null** (over the last 4 minutes before measurements.date, divide by 1.852 for converting to knots) | km/h
@@ -354,7 +354,7 @@ Content-Type: text/javascript; charset=utf-8
     },
     "measurements": {
       "date": "2015-08-18T08:55:46.000Z",
-      "pressure": 986,
+      "pressure": null,
       "wind_heading": 157.5,
       "wind_speed_avg": 2,
       "wind_speed_max": 3,
