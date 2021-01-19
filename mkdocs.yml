@@ -8,26 +8,8 @@ repo_url: https://github.com/bacpluszero/pioupiou-for-devs
 pages:
 - Home: index.md
 - API:
-  - Live:
-    - API Description: api/live/index.md
-    - Examples :
-      - JavaScript (JQuery) : api/live/examples/jquery.md
-      - JavaScript (XMLHttpRequest) : api/live/examples/javascript.md
-      - NodeJS : api/live/examples/nodejs.md
-      - PHP : api/live/examples/php.md
-      - Java : api/live/examples/java.md
-      - Python : api/live/examples/python.md
-      - Objective-C : api/live/examples/objective-c.md
-  - Archive:
-    - API Description: api/archive/index.md
-    - Examples :
-      - JavaScript (JQuery) : api/archive/examples/jquery.md
-      - JavaScript (XMLHttpRequest) : api/archive/examples/javascript.md
-      - NodeJS : api/archive/examples/nodejs.md
-      - PHP : api/archive/examples/php.md
-      - Java : api/archive/examples/java.md
-      - Python : api/archive/examples/python.md
-      - Objective-C : api/archive/examples/objective-c.md
+  - Live: api/live/index.md
+  - Archive: api/archive/index.md
 #  - Edit: test.md
   - Push: api/push/index.md
 #- Widgets:
