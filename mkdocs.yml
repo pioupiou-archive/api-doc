@@ -43,11 +43,10 @@ pages:
 #  - Service status: http://status.pioupiou.fr
   - Bug tracker: bug-tracker.md
   - Contribute: contribute.md
-  - Release Notes: release-notes.md
 
 markdown_extensions:
   - toc:
       permalink: true
   - admonition:
   
-copyright: Copyright &copy; 2015 Bac Plus Zéro SAS - This documentation is licensed under  <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-By 4.0</a>.
+copyright: Copyright &copy; 2015 Bac Plus Zéro SAS, &copy; 2021 OpenWindMap SCIC SA - This documentation is licensed under  <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-By 4.0</a>.

@@ -16,9 +16,9 @@ It allows you to use the data from all the sensors of the Pioupiou Wind Network,
 
 ### Attribution
 
-You must give credit and provide a link to the [http://pioupiou.fr](http://pioupiou.fr) website in a visible part of your application.
+You must give credit and provide a link to the [https://openwindmap.org](https://openwindmap.org) website in a visible part of your application.
 
-Example: ```Wind data (c) contributors of the Pioupiou wind network <http://pioupiou.fr>```
+Example: ```Wind data (c) contributors of the OpenWindMap wind network <https://openwindmap.org>```
 
 You may do so in any reasonable manner, but not in any way that suggests that we endorse you or your use. 
 
@@ -60,6 +60,5 @@ We will not be liable for any consequential, incidental, or special damages, or 
 ## Extended License
 
 The **Extended License** can be adjusted to fit your needs.
-Prices range from €0 to €1999 per month.
 
-Contact us by email (```support@pioupiou.fr```) so we can discuss your project.
+Contact us on the forum ([https://forum.openwindmap.org/](https://forum.openwindmap.org/)) so we can discuss your project.

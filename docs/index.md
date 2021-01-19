@@ -22,9 +22,3 @@ To use data from Pioupiou stations, you must comply with the license available o
 [Push]: api/push/index.md
 [Socket.IO]: http://socket.io
 [Data Licensing]: data-licensing.md
-
-## Announcements
-
-To receive notifications on technical evolutions and scheduled maintenance, we invite you to join our low-traffic Pioupiou-Devs-Announce Mailing List:
-
-[https://groups.google.com/forum/#!forum/pioupiou-devs-announce/join](https://groups.google.com/forum/#!forum/pioupiou-devs-announce/join)
