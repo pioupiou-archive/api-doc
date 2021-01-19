@@ -18,9 +18,9 @@ pages:
 #  - Archive: test.md
 #  - Edit: test.md
 #  - Push: test.md
+- Licensing : data-licensing.md
 - More:
   - Get support: support.md
-  - Data licensing: data-licensing.md
 #  - Usage policy: usage-policy.md
 #  - Service status: http://status.pioupiou.fr
   - Bug tracker: bug-tracker.md
