@@ -1,10 +1,5 @@
 # pioupiou-for-devs
 
-## DEPRECATION NOTICE
-**THIS REPOSITORY IS NO LONGER ACTIVE.**
-
-**PLEASE MOVE TO THE NEW PROJECT: https://github.com/OpenWindMap/api-doc**
-
 ## Introduction
 
 This repository hosts the documentation for the Pioupiou API
