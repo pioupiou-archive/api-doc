@@ -12,12 +12,7 @@ pages:
   - Archive: api/archive/index.md
 #  - Edit: test.md
   - Push: api/push/index.md
-#- Widgets:
-#  - Live:
-#    - Live: test.md
-#  - Archive: test.md
-#  - Edit: test.md
-#  - Push: test.md
+- Widgets: widgets.md
 - Licensing : data-licensing.md
 - More:
   - Get support: support.md
@@ -31,4 +26,4 @@ markdown_extensions:
       permalink: true
   - admonition:
   
-copyright: Copyright &copy; 2015 Bac Plus Zéro SAS, &copy; 2021 OpenWindMap SCIC SA - This documentation is licensed under  <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-By 4.0</a>.
+copyright: Copyright &copy; 2015 Bac Plus Zéro SAS, &copy; 2021-2023 OpenWindMap SCIC SA - This documentation is licensed under  <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-By 4.0</a>.
