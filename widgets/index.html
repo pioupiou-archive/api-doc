@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Nicolas Baldeck">
-        
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>Pioupiou for Devs</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="canonical" href="http://developers.pioupiou.fr/widgets/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Widgets - Pioupiou for Devs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -23,7 +23,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/.">Pioupiou for Devs</a>
+                <a class="navbar-brand" href="..">Pioupiou for Devs</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,45 +34,45 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="/." class="nav-link">Home</a>
+                                <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">API <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/api/live/" class="dropdown-item">Live</a>
+    <a href="../api/live/" class="dropdown-item">Live</a>
 </li>
                                     
 <li>
-    <a href="/api/archive/" class="dropdown-item">Archive</a>
+    <a href="../api/archive/" class="dropdown-item">Archive</a>
 </li>
                                     
 <li>
-    <a href="/api/push/" class="dropdown-item">Push</a>
+    <a href="../api/push/" class="dropdown-item">Push</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="navitem">
-                                <a href="/widgets/" class="nav-link">Widgets</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Widgets</a>
                             </li>
                             <li class="navitem">
-                                <a href="/data-licensing/" class="nav-link">Licensing</a>
+                                <a href="../data-licensing/" class="nav-link">Licensing</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/support/" class="dropdown-item">Get support</a>
+    <a href="../support/" class="dropdown-item">Get support</a>
 </li>
                                     
 <li>
-    <a href="/bug-tracker/" class="dropdown-item">Bug tracker</a>
+    <a href="../bug-tracker/" class="dropdown-item">Bug tracker</a>
 </li>
                                     
 <li>
-    <a href="/contribute/" class="dropdown-item">Contribute</a>
+    <a href="../contribute/" class="dropdown-item">Contribute</a>
 </li>
                                 </ul>
                             </li>
@@ -85,7 +85,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/bacpluszero/pioupiou-for-devs/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                                <a rel="prev" href="../api/push/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../data-licensing/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/bacpluszero/pioupiou-for-devs/edit/master/docs/widgets.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -94,15 +104,86 @@
 
         <div class="container">
             <div class="row">
-
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#widgets" class="nav-link">Widgets</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#code" class="nav-link">Code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#options" class="nav-link">Options</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
+<h1 id="widgets">Widgets<a class="headerlink" href="#widgets" title="Permanent link">&para;</a></h1>
+<p>We provide widgets for easy integration of OpenWindMap stations on your website.</p>
+<h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h2>
+<h4 id="1-add-one-or-more-widgets-on-your-page">1) Add one or more widgets on your page<a class="headerlink" href="#1-add-one-or-more-widgets-on-your-page" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;!-- display only live wind for Windbird n°1399 --&gt;
+&lt;div class=&quot;owm-widget&quot; data-id=&quot;WB1399&quot;&gt;&lt;/div&gt;
+
+&lt;!-- display live wind and 2 h history graph for Pioupiou n°641 --&gt;
+&lt;div class=&quot;owm-widget&quot; data-id=&quot;PP641&quot; data-show-live=&quot;yes&quot; data-show-2h=&quot;yes&quot; data-show-24h=&quot;no&quot;&gt;&lt;/div&gt;
+
+&lt;!-- display live wind and 24 h history graph for MeteoWind n°800 --&gt;
+&lt;div class=&quot;owm-widget&quot; data-id=&quot;MW800&quot; data-show-live=&quot;no&quot; data-show-2h=&quot;no&quot; data-show-24h=&quot;yes&quot;&gt;&lt;/div&gt;
+</code></pre>
+<h4 id="2-add-this-script-to-the-bottom-of-the-page">2) Add this script to the bottom of the page<a class="headerlink" href="#2-add-this-script-to-the-bottom-of-the-page" title="Permanent link">&para;</a></h4>
+<p>just before the <code>&lt;/body&gt;</code> tag.</p>
+<pre><code class="language-html">&lt;script src=&quot;https://www.openwindmap.org/js/widget-v1.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{data-id}</td>
+<td>ID of the station</td>
+<td>ex: WB1300, PP123, MW800, A900 (Required)</td>
+</tr>
+<tr>
+<td>{data-show-live}</td>
+<td>Display the live wind</td>
+<td>yes / no / 0 / 1 / true / false (Optional)</td>
+</tr>
+<tr>
+<td>{data-show-2h}</td>
+<td>Display the 2 hours history graph</td>
+<td>(Optional)</td>
+</tr>
+<tr>
+<td>{data-show-24h}</td>
+<td>Display the 24 hours history graph</td>
+<td>(Optional)</td>
+</tr>
+</tbody>
+</table>
+<p>If no <code>data-show-...</code> option is passed, the widget will display live wind</p>
+<div class="owm-widget" data-id="WB1399"></div>
+<script src="https://www.openwindmap.org/js/widget-v1.js"></script></div>
             </div>
         </div>
 
@@ -112,11 +193,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js" defer></script>
-        <script src="/search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

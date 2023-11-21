@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>http://developers.pioupiou.fr/</loc>
-     <lastmod>2021-01-19</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://developers.pioupiou.fr/</loc>
+         <lastmod>2023-11-21</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://developers.pioupiou.fr/api/live/</loc>
-     <lastmod>2021-01-19</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://developers.pioupiou.fr/bug-tracker/</loc>
+         <lastmod>2023-11-21</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://developers.pioupiou.fr/api/archive/</loc>
-     <lastmod>2021-01-19</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://developers.pioupiou.fr/contribute/</loc>
+         <lastmod>2023-11-21</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://developers.pioupiou.fr/api/push/</loc>
-     <lastmod>2021-01-19</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://developers.pioupiou.fr/data-licensing/</loc>
+         <lastmod>2023-11-21</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://developers.pioupiou.fr/data-licensing/</loc>
-     <lastmod>2021-01-19</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://developers.pioupiou.fr/support/</loc>
+         <lastmod>2023-11-21</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://developers.pioupiou.fr/support/</loc>
-     <lastmod>2021-01-19</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://developers.pioupiou.fr/widgets/</loc>
+         <lastmod>2023-11-21</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://developers.pioupiou.fr/bug-tracker/</loc>
-     <lastmod>2021-01-19</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://developers.pioupiou.fr/api/archive/</loc>
+         <lastmod>2023-11-21</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://developers.pioupiou.fr/contribute/</loc>
-     <lastmod>2021-01-19</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://developers.pioupiou.fr/api/live/</loc>
+         <lastmod>2023-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://developers.pioupiou.fr/api/push/</loc>
+         <lastmod>2023-11-21</lastmod>
+         <changefreq>daily</changefreq>
     </url>
 </urlset>

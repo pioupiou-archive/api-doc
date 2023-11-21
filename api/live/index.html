@@ -9,98 +9,93 @@
         <link rel="canonical" href="http://developers.pioupiou.fr/api/live/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Live - Pioupiou for Devs</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">Pioupiou for Devs</a>
-                </div>
+                <a class="navbar-brand" href="../..">Pioupiou for Devs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../..">Home</a>
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">API <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">API <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="./">Live</a>
+<li>
+    <a href="./" class="dropdown-item active">Live</a>
 </li>
                                     
-<li >
-    <a href="../archive/">Archive</a>
+<li>
+    <a href="../archive/" class="dropdown-item">Archive</a>
 </li>
                                     
-<li >
-    <a href="../push/">Push</a>
+<li>
+    <a href="../push/" class="dropdown-item">Push</a>
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="../../data-licensing/">Licensing</a>
+                            <li class="navitem">
+                                <a href="../../widgets/" class="nav-link">Widgets</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../data-licensing/" class="nav-link">Licensing</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../support/">Get support</a>
+<li>
+    <a href="../../support/" class="dropdown-item">Get support</a>
 </li>
                                     
-<li >
-    <a href="../../bug-tracker/">Bug tracker</a>
+<li>
+    <a href="../../bug-tracker/" class="dropdown-item">Bug tracker</a>
 </li>
                                     
-<li >
-    <a href="../../contribute/">Contribute</a>
+<li>
+    <a href="../../contribute/" class="dropdown-item">Contribute</a>
 </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../..">
+                            <li class="nav-item">
+                                <a rel="prev" href="../.." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../archive/">
+                            <li class="nav-item">
+                                <a rel="next" href="../archive/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://github.com/bacpluszero/pioupiou-for-devs/edit/master/docs/api/live/index.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            <li class="nav-item">
+                                <a href="https://github.com/bacpluszero/pioupiou-for-devs/edit/master/docs/api/live/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -108,50 +103,80 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#live-api">Live API</a></li>
-            <li><a href="#license">License</a></li>
-            <li><a href="#endpoints">Endpoints</a></li>
-            <li><a href="#arguments">Arguments</a></li>
-            <li><a href="#responses">Responses</a></li>
-            <li><a href="#error-codes">Error codes</a></li>
-            <li><a href="#jsonp-and-cors">JSONP and CORS</a></li>
-            <li><a href="#limitations">Limitations</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#live-api" class="nav-link">Live API</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#license" class="nav-link">License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#endpoints" class="nav-link">Endpoints</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#arguments" class="nav-link">Arguments</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#responses" class="nav-link">Responses</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#error-codes" class="nav-link">Error codes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#jsonp-and-cors" class="nav-link">JSONP and CORS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#limitations" class="nav-link">Limitations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="live-api">Live API<a class="headerlink" href="#live-api" title="Permanent link">&para;</a></h1>
 <p>The Live API provides access to the latest measurements from <strong>one station</strong> or <strong>all stations</strong>.</p>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p>To use data from Pioupiou stations, you must comply with the license available on the <a href="../../data-licensing/">Data Licensing</a> page.</p>
 <h2 id="endpoints">Endpoints<a class="headerlink" href="#endpoints" title="Permanent link">&para;</a></h2>
-<pre><code class="bash"># latest measurements only
+<pre><code class="language-bash"># latest measurements only
 GET http://api.pioupiou.fr/v1/live/{station_id}
 </code></pre>
-
-<pre><code class="bash"># latest measurements with complete metadata
+<pre><code class="language-bash"># latest measurements with complete metadata
 GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
 </code></pre>
-
 <h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h2>
-<pre><code class="bash"># for a single station
+<pre><code class="language-bash"># for a single station
 {station_id} : Numeric ID of the station
 </code></pre>
-
-<pre><code class="bash"># for all stations
+<pre><code class="language-bash"># for all stations
 {station_id} : &quot;all&quot;
 </code></pre>
-
 <h2 id="responses">Responses<a class="headerlink" href="#responses" title="Permanent link">&para;</a></h2>
 <p>The <strong>Live</strong> API provides JSON responses.</p>
 <h3 id="response-examples">Response examples<a class="headerlink" href="#response-examples" title="Permanent link">&para;</a></h3>
 <h4 id="single-station-latest-measurements-only">Single station, latest measurements only<a class="headerlink" href="#single-station-latest-measurements-only" title="Permanent link">&para;</a></h4>
-<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live/110&quot;
+<pre><code class="language-bash">$ curl &quot;http://api.pioupiou.fr/v1/live/110&quot;
 </code></pre>
-
-<pre><code class="json">{
+<pre><code class="language-json">{
   &quot;doc&quot;: &quot;http://developers.pioupiou.fr/api/live/&quot;,
   &quot;license&quot;: &quot;http://developers.pioupiou.fr/data-licensing&quot;,
   &quot;attribution&quot;: &quot;(c) contributors of the Pioupiou wind network &lt;http://pioupiou.fr&gt;&quot;,
@@ -182,12 +207,10 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
   }
 }
 </code></pre>
-
 <h4 id="single-station-latest-measurements-with-complete-metadata">Single station, latest measurements with complete metadata<a class="headerlink" href="#single-station-latest-measurements-with-complete-metadata" title="Permanent link">&para;</a></h4>
-<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live-with-meta/110&quot;
+<pre><code class="language-bash">$ curl &quot;http://api.pioupiou.fr/v1/live-with-meta/110&quot;
 </code></pre>
-
-<pre><code class="json">{
+<pre><code class="language-json">{
   &quot;doc&quot;: &quot;http://developers.pioupiou.fr/api/live/&quot;,
   &quot;license&quot;: &quot;http://developers.pioupiou.fr/data-licensing&quot;,
   &quot;attribution&quot;: &quot;(c) contributors of the Pioupiou wind network &lt;http://pioupiou.fr&gt;&quot;,
@@ -225,12 +248,10 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
   }
 }
 </code></pre>
-
 <h4 id="all-stations-latest-measurements-only">All stations, latest measurements only<a class="headerlink" href="#all-stations-latest-measurements-only" title="Permanent link">&para;</a></h4>
-<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live/all&quot;
+<pre><code class="language-bash">$ curl &quot;http://api.pioupiou.fr/v1/live/all&quot;
 </code></pre>
-
-<pre><code class="json">{
+<pre><code class="language-json">{
   &quot;doc&quot;: &quot;http://developers.pioupiou.fr/api/live/&quot;,
   &quot;license&quot;: &quot;http://developers.pioupiou.fr/data-licensing&quot;,
   &quot;attribution&quot;: &quot;(c) contributors of the Pioupiou wind network &lt;http://pioupiou.fr&gt;&quot;,
@@ -290,12 +311,10 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
   ]
 }
 </code></pre>
-
 <h4 id="all-stations-latest-measurements-with-complete-metadata">All stations, latest measurements with complete metadata<a class="headerlink" href="#all-stations-latest-measurements-with-complete-metadata" title="Permanent link">&para;</a></h4>
-<pre><code class="bash">$ curl &quot;http://api.pioupiou.fr/v1/live-with-meta/all&quot;
+<pre><code class="language-bash">$ curl &quot;http://api.pioupiou.fr/v1/live-with-meta/all&quot;
 </code></pre>
-
-<pre><code class="json">{
+<pre><code class="language-json">{
   &quot;doc&quot;: &quot;http://developers.pioupiou.fr/api/live/&quot;,
   &quot;license&quot;: &quot;http://developers.pioupiou.fr/data-licensing&quot;,
   &quot;attribution&quot;: &quot;(c) contributors of the Pioupiou wind network &lt;http://pioupiou.fr&gt;&quot;,
@@ -369,7 +388,6 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
   ]
 }
 </code></pre>
-
 <h3 id="responses-parameters-details">Responses parameters details<a class="headerlink" href="#responses-parameters-details" title="Permanent link">&para;</a></h3>
 <p>A <code>data</code> object is returned. It contains a single station <code>{}</code> or an array of all stations<code>[{},{}..{},{}]</code>.</p>
 <p>Every station contains the following parameters :</p>
@@ -530,17 +548,15 @@ GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
 <p>An <code>HTTP/1.1 200 OK</code> header is sent on successful request.
 HTTP status code other than <code>200</code> means that an error has occured.</p>
 <p>In most cases the application will return a JSON object, including details about the error.</p>
-<pre><code class="bash">$ curl -i &quot;http://api.pioupiou.fr/v1/live/999999&quot;
+<pre><code class="language-bash">$ curl -i &quot;http://api.pioupiou.fr/v1/live/999999&quot;
 </code></pre>
-
-<pre><code class="json">HTTP/1.1 404 Not Found
+<pre><code class="language-json">HTTP/1.1 404 Not Found
 
 {
   &quot;error_code&quot;: &quot;station_not_found&quot;,
   &quot;error_message&quot;: &quot;unable to find station with this {station_id}&quot;
 }
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -573,10 +589,9 @@ HTTP status code other than <code>200</code> means that an error has occured.</p
 <h3 id="jsonp">JSONP<a class="headerlink" href="#jsonp" title="Permanent link">&para;</a></h3>
 <p>JSONP is also supported, even if its use is no longer encouraged.</p>
 <p>The name of the callback function must be placed in query string <code>callback</code> argument:</p>
-<pre><code class="bash">$ curl -i &quot;http://api.pioupiou.fr/v1/live/1?callback=myCallBackFunction&quot;
+<pre><code class="language-bash">$ curl -i &quot;http://api.pioupiou.fr/v1/live/1?callback=myCallBackFunction&quot;
 </code></pre>
-
-<pre><code class="json">HTTP/1.1 200 OK
+<pre><code class="language-json">HTTP/1.1 200 OK
 Content-Type: text/javascript; charset=utf-8
 
 /**/ typeof myCallBackFunction === 'function' &amp;&amp; myCallBackFunction({
@@ -610,15 +625,15 @@ Content-Type: text/javascript; charset=utf-8
   }
 });
 </code></pre>
-
 <h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">&para;</a></h2>
 <p>Updates for <strong>all stations</strong> or a <strong>single station</strong> should not be requested more often than every 60 seconds. If you need real-time information, please use the <a href="../push/">Push API</a>.</p>
 <p>If you use this API for a high-traffic application, you have to set-up your own cache server.</p></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright &copy; 2015 Bac Plus Zéro SAS, &copy; 2021 OpenWindMap SCIC SA - This documentation is licensed under  <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-By 4.0</a>.</p>
+                <p>Copyright &copy; 2015 Bac Plus Zéro SAS, &copy; 2021-2023 OpenWindMap SCIC SA - This documentation is licensed under  <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-By 4.0</a>.</p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
@@ -628,35 +643,32 @@ Content-Type: text/javascript; charset=utf-8
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
