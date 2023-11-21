@@ -6,24 +6,50 @@ We provide widgets for easy integration of OpenWindMap stations on your website.
 
 ## Code
 
-
-#### 1) Add one or more widgets on your page
-```html
-<!-- display only live wind for Windbird n°1399 -->
-<div class="owm-widget" data-id="WB1399"></div>
-
-<!-- display live wind and 2 h history graph for Pioupiou n°641 -->
-<div class="owm-widget" data-id="PP641" data-show-live="yes" data-show-2h="yes" data-show-24h="no"></div>
-
-<!-- display live wind and 24 h history graph for MeteoWind n°800 -->
-<div class="owm-widget" data-id="MW800" data-show-live="no" data-show-2h="no" data-show-24h="yes"></div>
-```
-
-#### 2) Add this script to the bottom of the page
+### 1) Add this script to the bottom of the page
 just before the `</body>` tag.
 ```html
 <script src="https://www.openwindmap.org/js/widget-v1.js"></script>
 ```
+
+
+### 2) Add one or more widgets on your page
+
+#### Display only live wind for Windbird n°1399:
+
+```html
+<div 
+  class="owm-widget"
+  data-id="WB1399"
+></div>
+```
+<div class="owm-widget" data-id="WB1399"></div>
+
+
+#### Display live wind and 2 h history graph for Pioupiou n°641:
+```html
+<div
+  class="owm-widget"
+  data-id="PP641"
+  data-show-live="yes"
+  data-show-2h="yes"
+  data-show-24h="no"
+></div>
+```
+<div class="owm-widget" data-id="PP641" data-show-live="yes" data-show-2h="yes" data-show-24h="no"></div>
+
+#### Display live wind and 24 h history graph for MeteoWind n°800
+```html
+<div
+  class="owm-widget"
+  data-id="MW800"
+  data-show-live="no"
+  data-show-2h="no"
+  data-show-24h="yes"
+></div>
+```
+<div class="owm-widget" data-id="MW800" data-show-live="no" data-show-2h="no" data-show-24h="yes"></div>
+
 
 ## Options
 
@@ -36,5 +62,4 @@ Name | Description | .
 
 If no `data-show-...` option is passed, the widget will display live wind
 
-<div class="owm-widget" data-id="WB1399"></div>
 <script src="https://www.openwindmap.org/js/widget-v1.js"></script>
