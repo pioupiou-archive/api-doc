@@ -15,6 +15,10 @@ just before the `</body>` tag.
 
 ### 2) Add one or more widgets on your page
 
+Place this code where you want the widget to appear.
+
+You can add as many widgets as you want on the same page.
+
 #### Display only live wind for Windbird n°1399:
 
 ```html
