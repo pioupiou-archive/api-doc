@@ -25,5 +25,8 @@ markdown_extensions:
   - toc:
       permalink: true
   - admonition:
+    
+theme:
+  name: 'material'  
   
 copyright: Copyright &copy; 2015 Bac Plus Zéro SAS, &copy; 2021-2023 OpenWindMap SCIC SA - This documentation is licensed under  <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC-By 4.0</a>.
